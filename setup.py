@@ -28,7 +28,8 @@ if sys.platform == 'darwin':
 
     if v2 >= 10:
         # More than 10.10
-        extra_compile_args=['-I/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/Headers']
+        #extra_compile_args=['-I/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/Headers']
+	      extra_compile_args=['-I/usr/local/opt/openblas/include']
     else:
         extra_compile_args=['-I/System/Library/Frameworks/vecLib.framework/Headers']
 
